@@ -27,8 +27,6 @@ public void workaroundForBugsInTheCodeOfTheOtherTeam() {
 }
 ```
 
-`@BlackBox` : How many times did you encounter a method with jigglish code that you have no idea what it's doing? To indicate to your fellow team members that you have literally no idea what this code is doing, use the `@BlackBox` annotation, it is less intrusive than using @Deprecate
-
 `@Calimero` : Whenever there was a team decision and you were the *only* one on the whiteboard that did not agree with the decision, because it was a very bad idea, but they chose you to implement the bad idea, you can use the `@Calimero` annotation to express the fact that you did not intend to write this code, but since you are a team player, you follow the team.
 
 `@Hybris` : If you started coding a method yourself with too much confidence and you thought you would pull it off, but 8 hours later, you are left with a method that seems to work, but you are not really a hundred percent sure why, you can indicate your overconfidence with the `@Hybris` method.
@@ -38,3 +36,16 @@ public void workaroundForBugsInTheCodeOfTheOtherTeam() {
 ### Expressing an apology
 
 `@Ygolopa` : Sometimes you just want to apologize to the user, but using a comment is not typesafe, these times you can use the `@Ygolopa` annotation, which is an obfuscated form of the word Apology.
+
+### Expressing assessments
+
+`@BlackBox` : How many times did you encounter a method with jigglish code that you have no idea what it's doing? To indicate to your fellow team members that you have literally no idea what this code is doing, use the `@BlackBox` annotation, it is less intrusive than using @Deprecate
+
+`@CodeSmell` : When you encounter a code smell, you can let your fellow team members know by annotating the code with `@CodeSmell` and indicate the appropriate smell such as `CYCLOMATIC_COMPLEXITY`, `REFUSED_BEQUEST`, `INAPPROPRIATE_INTIMACY`, `FEATURE_ENVY` or `CYCLOMATIC_COMPLEXITY`.
+```java
+    @CodeSmell(CYCLOMATIC_COMPLEXITY)
+    public void isPrime() {
+        //nested conditionals
+    }
+```
+
