@@ -37,7 +37,7 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type-safe a
     }
 ```
 
-**`@Calimero`** : Whenever there was a team decision and you were the *only* one on the whiteboard that did not agree with the decision - because it was a very bad idea - but they chose you to implement the bad idea, you can use the `@Calimero` annotation to express the fact that you did not intend to write this code, but since you are a team player, you follow the team.
+**`@Calimero`** : Whenever there was a team decision and you were the *only* one on the whiteboard that did not agree with the decision *- because it was a very bad idea -* but they chose you to implement the bad idea, you can use the `@Calimero` annotation to express the fact that you did not intend to write this code, but since you are a team player, you follow the team.
 
 **`@Hybris`** : If you started coding a method yourself with too much confidence and you thought you would pull it off, but 8 hours later, you are left with a method that seems to work, but you are not really a hundred percent sure why, you can indicate your overconfidence with the `@Hybris` method.
 
@@ -67,7 +67,7 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type-safe a
 *Example*:
 
 ```java
-   @AntiPattern(Pattern.ERROR_HIDING)
+   @AntiPattern(ERROR_HIDING)
     public void liveOnTheEdge() {
         try {
             somethingDangerous();
@@ -79,14 +79,14 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type-safe a
 
 ### Expressing a warning
 
-**`@GodChild`** : Sometimes you encounter crappy code, but there is no way you can refactor it, because it was written by the manager at the times he was still a developer. He got promotion to get rid of him as a developer, but he still won't bear with changes to his code, since he is God now. Protect your fellow developers from fiddling with this code by annotating it using the `@GodChild` annotation.
+**`@GodChild`** : Sometimes you encounter crappy code, but there is no way you can refactor it, written by the manager at the times he was still a developer. He got promotion to get rid of him as a developer, but he still won't bear with changes to his code, since he is God now. Protect your fellow developers from fiddling with this code by annotating it using the `@GodChild` annotation.
 
 *Example*:
 
 ```java
-   @GodChild
+    @GodChild
     public void manuallyComposeJSONByStringConcatenation() {
-        
+        //dirty code
     }
 ```
 
