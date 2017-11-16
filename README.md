@@ -68,12 +68,12 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type-safe a
 
 ```java
    @AntiPattern(ERROR_HIDING)
-    public void liveOnTheEdge() {
-        try {
+   public void liveOnTheEdge() {
+       try {
             somethingDangerous();
-        } catch (Exception e){
+       } catch (Exception e){
             //do nothing
-        }
+       }
     }
 ```
 
