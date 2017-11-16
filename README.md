@@ -45,7 +45,7 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type safe a
 
 ### Expressing an apology
 
-**`@Ygolopa`** : Sometimes you just want to apologize to the user, but using a comment is not typesafe, these times you can use the `@Ygolopa` annotation, which is an obfuscated form of the word Apology.
+**`@Ygolopa`** : Sometimes you just want to apologize to the user, but using a comment is not type safe; these times you can use the `@Ygolopa` annotation, which is an obfuscated form of the word Apology.
 
 ### Expressing assessments
 
