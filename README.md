@@ -51,7 +51,7 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type safe a
 
 **`@BlackBox`** : How many times did you encounter a method with jigglish code that you have no idea what it's doing? To indicate to your fellow team members that you have literally no idea what this code is doing, use the `@BlackBox` annotation, it is less intrusive than using `@Deprecated`
 
-**`@CodeSmell`** : When you encounter a code smell, you can let your fellow team members know by annotating the code with `@CodeSmell` and indicate the appropriate smell such as `CYCLOMATIC_COMPLEXITY`, `REFUSED_BEQUEST`, `INAPPROPRIATE_INTIMACY`, `FEATURE_ENVY` or `CYCLOMATIC_COMPLEXITY`.
+**`@CodeSmell`** : When you encounter a code smell, you can let your fellow team members know by annotating the code with `@CodeSmell` and indicate the appropriate smell such as `GOD_CLASS`, `REFUSED_BEQUEST`, `INAPPROPRIATE_INTIMACY`, `FEATURE_ENVY` or `CYCLOMATIC_COMPLEXITY`.
 
 *Example*:
 
