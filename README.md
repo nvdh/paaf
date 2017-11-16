@@ -1,5 +1,5 @@
 # PAAF
-The Passive Aggressive Annotation Framework (PAAF) provides a set of type-safe annotations that developers can use to express passive agression; the framework is provided as a type-safe alternative to comments.
+The Passive Aggressive Annotation Framework (PAAF) provides a set of type safe annotations that developers can use to express passive agression; the framework is provided as a type safe alternative to comments.
 
 ## Usage, general
 
