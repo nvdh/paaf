@@ -49,7 +49,7 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type-safe a
 
 ### Expressing assessments
 
-**`@BlackBox`** : How many times did you encounter a method with jigglish code that you have no idea what it's doing? To indicate to your fellow team members that you have literally no idea what this code is doing, use the `@BlackBox` annotation, it is less intrusive than using @Deprecate
+**`@BlackBox`** : How many times did you encounter a method with jigglish code that you have no idea what it's doing? To indicate to your fellow team members that you have literally no idea what this code is doing, use the `@BlackBox` annotation, it is less intrusive than using `@Deprecated`
 
 **`@CodeSmell`** : When you encounter a code smell, you can let your fellow team members know by annotating the code with `@CodeSmell` and indicate the appropriate smell such as `CYCLOMATIC_COMPLEXITY`, `REFUSED_BEQUEST`, `INAPPROPRIATE_INTIMACY`, `FEATURE_ENVY` or `CYCLOMATIC_COMPLEXITY`.
 
@@ -79,7 +79,7 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type-safe a
 
 ### Expressing a warning
 
-**`@GodChild`** : Sometimes you encounter crappy code, but there is no way you can refactor it, written by the manager at the times he was still a developer. He got promotion to get rid of him as a developer, but he still won't bear with changes to his code, since he is God now. Protect your fellow developers from fiddling with this code by annotating it using the `@GodChild` annotation.
+**`@GodChild`** : Sometimes you encounter crappy code, but there is no way you can refactor it, because it's written by the manager at the times he was still a developer. He got promotion to get rid of him as a developer, but he still won't bear with changes to his code, since he is God now. Protect your fellow developers from fiddling with this code by annotating it using the `@GodChild` annotation.
 
 *Example*:
 
@@ -90,5 +90,5 @@ The Passive Aggressive Annotation Framework (PAAF) provides a set of type-safe a
     }
 ```
 
-**`@QuantumEntanglement`** : Sometimes you encounter code that should be refactored, but whatever you change in the code has side effects in parts of the codebase that seem totally unrelated. Since those effects are only visible after you run your tets suites of the other modules in your codebase, you should prevent other developers in your team to fiddle with this code as they won't be smart enough to understand the ripple effects.
+**`@QuantumEntanglement`** : Sometimes you encounter code that should be refactored, but whatever you change in the code has side effects in parts of the codebase that seem totally unrelated. Since those effects are only visible after you run your test suites of the other modules in your codebase, you should prevent other developers in your team to fiddle with this code as they won't be smart enough to understand the ripple effects.
 
