@@ -42,6 +42,9 @@ public void workaroundForBugsInTheCodeOfTheOtherTeam() {
 `@BlackBox` : How many times did you encounter a method with jigglish code that you have no idea what it's doing? To indicate to your fellow team members that you have literally no idea what this code is doing, use the `@BlackBox` annotation, it is less intrusive than using @Deprecate
 
 `@CodeSmell` : When you encounter a code smell, you can let your fellow team members know by annotating the code with `@CodeSmell` and indicate the appropriate smell such as `CYCLOMATIC_COMPLEXITY`, `REFUSED_BEQUEST`, `INAPPROPRIATE_INTIMACY`, `FEATURE_ENVY` or `CYCLOMATIC_COMPLEXITY`.
+
+*Example*:
+
 ```java
     @CodeSmell(CYCLOMATIC_COMPLEXITY)
     public void isPrime() {
@@ -49,3 +52,17 @@ public void workaroundForBugsInTheCodeOfTheOtherTeam() {
     }
 ```
 
+`@AntiPattern` : When you encounter an anti pattern, you can let your fellow team members know by annotating the code with `@AntiPattern` and indicate the appropriate pattern such as `BUSY_WAITING`, `CODING_BY_EXCEPTION`, `ERROR_HIDING`, `LAVA_FLOW`, `MAGIC_NUMBER`, `MAGIC_STRING`, `OBJECT_ORGY`.
+
+*Example*:
+
+```java
+   @AntiPattern(Pattern.ERROR_HIDING)
+    public void liveOnTheEdge() {
+        try {
+            somethingDangerous();
+        } catch (Exception e){
+            //do nothing
+        }
+    }
+```
